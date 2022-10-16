@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link href="./assets/css/core/library.css" rel="stylesheet" />
+    <link href="./assets/css/core/variables.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/footer.css" rel="stylesheet" />
+    <link href="./assets/css/header.css" rel="stylesheet" />
+    <link href="./assets/css/portfolio.css" rel="stylesheet" />
+  </head>
+
+  <body class="body">
+    <!-- Шапка -->
+    <header class="header">
+      <!-- Навигация -->
+      <div class="container">
+        <nav class="justify-content-between d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <a class="navigation__logo logo" href="./index.html">
+              Web<span class="logo__part">Studio</span>
+            </a>
+            <ul class="navigation__list list d-flex align-items-center">
+              <li class="list__item item">
+                <a class="item__link" href="./index.html">Студія</a>
+              </li>
+              <li class="list__item item">
+                <a class="item__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="list__item item">
+                <a class="item__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <!-- эл.почта и телефон -->
+          <ul class="contacts d-flex align-items-center">
+            <li class="contacts__item item">
+              <a class="item__link link link-grey" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item item">
+              <a class="item__link link link-grey" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Основной контент -->
+    <main class="page__portfolio portfolio">
+      <!-- Кнопки фильтра проектов портфолио-->
+      <section class="portfolio__list list container-vertical-padding">
+        <div class="container">
+          <ul class="list__filter filter d-flex justify-content-center">
+            <li class="filter__item item">
+              <button class="item__button button" type="button">Усі</button>
+            </li>
+            <li class="filter__item item">
+              <button class="item__button button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter__item item">
+              <button class="item__button button" type="button">Додатки</button>
+            </li>
+            <li class="filter__item item">
+              <button class="item__button button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item item">
+              <button class="item__button button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Проекты компании -->
+          <ul class="list__cards cards d-flex flex-wrap">
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-1.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Технокряк</h2>
+                  <p class="link__category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-2.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="link__category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-3.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Ресторан Seafood</h2>
+                  <p class="link__category">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-4.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Проєкт Prime</h2>
+                  <p class="link__category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-5.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Проєкт Boxes</h2>
+                  <p class="link__category">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-6.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Inspiration has no Borders</h2>
+                  <p class="link__category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-7.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Видання Limited Edition</h2>
+                  <p class="link__category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-8.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Проєкт LAB</h2>
+                  <p class="link__category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item item">
+              <a class="item__link link" href="#">
+                <img class="link__picture" src="./assets/images/jpg/portfolio-image-9.jpg" alt="" />
+                <div class="item__content">
+                  <h2 class="link__title">Growing Business</h2>
+                  <p class="link__category">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <a class="footer__logo logo" href="./index.html">
+          Web<span class="logo__part">Studio</span>
+        </a>
+        <address class="footer__address address">
+          <ul class="address__list list">
+            <li class="list__item item">
+              <a
+                class="item__link"
+                href="https://goo.gl/maps/8viNXfXdV3uJQZfFA"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                м. Київ, пр-т Лесі Українки, 26
+              </a>
+            </li>
+            <li class="list__item item item-center">
+              <a class="item__link link link-alpha-grey" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="list__item item">
+              <a class="item__link link link-alpha-grey" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

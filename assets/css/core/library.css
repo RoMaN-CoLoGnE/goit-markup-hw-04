@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--basic-grey-color);
+  background-color: var(--basic-white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Классы для флекс-бокса (flexbox) */
+
+.d-flex {
+  display: flex;
+}
+ 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* --- */
+
+/* Классы для цветовых стилей (color) */
+
+.text-white {
+  color: var(--basic-white-color);
+}
+
+.bg-blue {
+  background-color: var(--basic-blue-color);
+}
+
+/* Классы для контейнера (container) */
+
+.container {
+  width: var(--base-container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-top-padding {
+  padding-top: var(--base-vertical-padding);
+}
+
+.container-bottom-padding {
+  padding-bottom: var(--base-vertical-padding);
+}
+
+.container-vertical-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* --- */
+
+/* Классы для кнопки (button) */
+
+/* .button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.89;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:focus, .button:active, .button:hover {
+  background-color: var(--secondary-blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} */
+
+/* --- */
+
+
