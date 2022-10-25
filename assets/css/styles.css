@@ -92,6 +92,30 @@ img {
   margin: 10px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Header styles */
 .header {
   border-bottom: 1px solid var(--header-border-grey-color);
@@ -331,28 +355,27 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
-
-.our-team-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  gap: 10px;
+/* TODO при фокусе форма не круг и не видно иконки? */
+/* TODO общие стили для социалок, или лучше отдельно для команды и подвала сделать? */
+.our-team .social-list {
+  margin: 16px 0 0;
 }
 
-.our-team-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.our-team .social-item {
+  background-color: var(--basic-white-color);
+}
+
+.our-team .social-item:hover,
+.our-team .social-item:focus {
+  background-color: var(--basic-blue-color);
+}
+
+.our-team .social-link {
   fill: var(--icon-gray-color);
 }
 
-.our-team-link:hover,
-.our-team-link:focus {
-  background-color: var(--basic-blue-color);
+.our-team .social-link:hover,
+.our-team .social-link:focus {
   fill: var(--basic-white-color);
 }
 
@@ -449,36 +472,20 @@ img {
   font-weight: 700;
 }
 
-.social-list {
-  display: flex;
-  align-items: center;
+.footer .social-list {
   margin: 20px 0 0;
-  gap: 10px;
 }
 
-.social-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.footer .social-item {
   background: var(--white-color-100);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.social-item:hover {
+.footer .social-item:hover,
+.footer .social-item:focus {
   background: var(--basic-blue-color);
 }
 
-.social-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-icon {
+.footer .social-link {
   fill: var(--basic-white-color);
 }
 
