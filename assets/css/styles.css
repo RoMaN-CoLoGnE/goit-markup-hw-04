@@ -39,7 +39,7 @@ p {
 ul {
   list-style: none;
   padding: 0;
-  margin: 30px;
+  margin: 0;
 }
 
 a {
@@ -86,12 +86,6 @@ img {
   padding: 0 15px;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 10px;
-}
-
 .social-list {
   display: flex;
   justify-content: center;
@@ -102,18 +96,28 @@ img {
 .social-item {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-link {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  background-color: var(--basic-white-color);
+  color: var(--icon-gray-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--basic-blue-color);
+  color: var(--basic-white-color);
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 /* Header styles */
@@ -155,14 +159,15 @@ img {
 .menu-list {
   display: flex;
   align-items: center;
-  margin: 0 0 0 90px;
   gap: 50px;
+  margin: 0 0 0 90px;
 }
 
 .menu-link {
-  color: var(--basic-black-color);
-  padding: 32px 0;
   display: block;
+  padding: 32px 0;
+
+  color: var(--basic-black-color);
 }
 
 .menu-link:hover,
@@ -349,34 +354,12 @@ img {
   line-height: 1.18;
   color: var(--basic-black-color);
 }
-
+/* Margin-top übberarbeiten und besser auf margin-botton ändern! */
 .our-team-text {
   margin-top: 10px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
-}
-/* TODO при фокусе форма не круг и не видно иконки? */
-/* TODO общие стили для социалок, или лучше отдельно для команды и подвала сделать? */
-.our-team .social-list {
-  margin: 16px 0 0;
-}
-
-.our-team .social-item {
-  background-color: var(--basic-white-color);
-}
-
-.our-team .social-item:hover,
-.our-team .social-item:focus {
-  background-color: var(--basic-blue-color);
-}
-
-.our-team .social-link {
-  fill: var(--icon-gray-color);
-}
-
-.our-team .social-link:hover,
-.our-team .social-link:focus {
-  fill: var(--basic-white-color);
 }
 
 /* Partners styles */
@@ -394,21 +377,25 @@ img {
 }
 
 .partners-link {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--icon-gray-color);
+  width: 100%;
+  height: 100%;
+
   border: 1px solid var(--icon-gray-color);
   border-radius: 4px;
-  fill: currentColor;
+  color: var(--icon-gray-color);
 }
 
 .partners-link:hover,
 .partners-link:focus {
   color: var(--basic-blue-color);
   border-color: var(--basic-blue-color);
+}
+
+.partners-icon {
+  fill: currentColor;
 }
 
 /* Footer styles */
@@ -437,6 +424,7 @@ img {
 
 .footer-address {
   margin-top: 20px;
+  font-style: normal;
 }
 
 .footer-list {
@@ -453,6 +441,7 @@ img {
 }
 
 .footer-link {
+  line-height: 1.71;
   color: var(--alternative-rgba-white-color);
 }
 
@@ -466,27 +455,17 @@ img {
 }
 
 .social-title {
+  margin-bottom: 20px;
+
   font-size: 14px;
   text-transform: uppercase;
   color: var(--basic-white-color);
   font-weight: 700;
 }
 
-.footer .social-list {
-  margin: 20px 0 0;
-}
-
-.footer .social-item {
-  background: var(--white-color-100);
-}
-
-.footer .social-item:hover,
-.footer .social-item:focus {
-  background: var(--basic-blue-color);
-}
-
-.footer .social-link {
-  fill: var(--basic-white-color);
+.footer-social-link {
+  background-color: var(--white-color-100);
+  color: var(--basic-white-color);
 }
 
 /* Portfolio styles */
@@ -527,13 +506,8 @@ img {
   gap: 30px;
 }
 
-.cards-item {
-  background-color: var(--basic-white-color);
-}
-
 .cards-link {
   display: block;
-  background-color: var(--basic-white-color);
 }
 
 .cards-link:hover,
